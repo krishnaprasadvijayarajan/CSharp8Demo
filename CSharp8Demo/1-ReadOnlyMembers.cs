@@ -7,17 +7,17 @@ namespace CSharp8Demo
    public struct Rectangle
     {
         public double Length { get; set; }
-        public double Height { get; set; }
-        
-        
-        // FULL PROPERTY will result in implicit copy in the readonly method
-        //private int _height;
+        //public double Height { get; set; }
 
-        //public int Height
-        //{
-        //    get { return _height; }
-        //    set { _height = value; }
-        //}
+
+        // FULL PROPERTY will result in implicit copy in the readonly method
+        private int _height;
+
+        public int Height
+        {
+            readonly get { return _height; }
+            set { _height = value; }
+        }
 
         public readonly double Area()
         {
