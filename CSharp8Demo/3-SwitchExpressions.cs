@@ -8,9 +8,9 @@ namespace CSharp8Demo
     {
         public static double DoMath(double x, double y, MathType math)
         {
-            double result;
+            double output;
 
-            result = math switch
+            output = math switch
             {
                 MathType.Add => x + y,
                 MathType.Subtract => x - y,
@@ -37,7 +37,7 @@ namespace CSharp8Demo
             //        throw new Exception("Invalid operation");
             //        break;
             //}
-            return result;
+            return output;
         }
     }
 
