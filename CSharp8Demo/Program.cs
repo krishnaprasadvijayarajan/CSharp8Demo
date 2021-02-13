@@ -7,7 +7,8 @@ namespace CSharp8Demo
         static void Main(string[] args)
         {
             //Console.WriteLine((SwitchExpressions.DoMath(12, 3, MathType.Add)).ToString());
-            IndicesAndRanges.Demo();
+            //IndicesAndRanges.Demo();
+            NullCoalescingAssignmentDemo.Demo();
             //ISubTotal cart2 = new ShoppingCart();
 
             //cart2.CalculateSubTotal();
